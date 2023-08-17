@@ -1,0 +1,38 @@
+/* In your CSS file */
+@font-face {
+  font-family: "MontBold";
+  src: url("../fonts/Mont/Mont-Bold 2.otf") format("opentype");
+  /* You can include more font formats as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontRegular";
+  src: url("../fonts/Mont/Mont-Regular.otf") format("opentype");
+  /* You can include more font formats as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TestManukaBold";
+  src: url("../fonts/Test Manuka/TestManuka-Bold.otf") format("opentype");
+  /* You can include more font formats as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* In your component's CSS */
+.mont-bold {
+  font-family: "MontBold", sans-serif; /* Use the imported font family */
+}
+.mont-regular {
+  font-family: "MontRegular", sans-serif; /* Use the imported font family */
+}
+.manuka-bold {
+  font-family: "TestManukaBold", sans-serif; /* Use the imported font family */
+}
+
+/* In your CSS file */
+.css-1erup6i-MuiTableCell-root {
+  font-family: "TestManukaBold", sans-serif; /* Use the imported font family */
+}

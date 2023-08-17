@@ -1,0 +1,257 @@
+/* odometer-custom.css */
+@import "../helpers/Fonts.css"; /* Import your custom font family */
+/* Rest of your styles... */
+
+.odometer-wrapper {
+  position: absolute;
+  top: 10.5%;
+  left: 83%;
+}
+
+/* Base styles */
+.odometer {
+  font-size: 2rem;
+}
+
+.odometer-digit {
+  position: relative;
+  color: black;
+  width: 2rem;
+  margin: 0 auto;
+}
+
+.odometer-digit .odometer-digit-spacer {
+  background: none !important;
+}
+
+.odometer-ribbon {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.odometer-digit-inner {
+  text-align: center;
+  /* line-height: 120%;  */
+  background-image: url("../assets/Asset 79.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.odometer.odometer-auto-theme {
+  font-family: "TestManukaBold", sans-serif !important;
+  /* font-size: "2rem"; */
+  color: "red";
+}
+
+/* Responsive styles */
+@media (min-width: 1490px) {
+  .odometer {
+    font-size: 2.5rem;
+  }
+
+  .odometer-digit {
+    width: 2.5rem;
+  }
+}
+@media ((min-width: 1300px) and (max-width:1490px)) {
+  .odometer {
+    font-size: 2rem;
+  }
+
+  .odometer-digit {
+    width: 2rem;
+  }
+}
+@media ((min-width: 900px) and (max-width:1300px)) {
+  .odometer {
+    font-size: 1.5rem;
+  }
+
+  .odometer-digit {
+    width: 1.5rem;
+  }
+}
+@media ((min-width: 768px) and (max-width:900px)) {
+  .odometer {
+    font-size: 1.2rem;
+  }
+
+  .odometer-digit {
+    width: 1.2rem;
+  }
+}
+@media ((min-width: 700px) and (max-width:768px)) {
+  .odometer {
+    font-size: 2.7rem;
+  }
+
+  .odometer-digit {
+    width: 2.7rem;
+  }
+  .odometer-wrapper {
+    top: 16%;
+    left: 68%;
+  }
+}
+@media ((min-width: 600px) and (max-width:700px)) {
+  .odometer {
+    font-size: 2.4rem;
+  }
+
+  .odometer-digit {
+    width: 2.4rem;
+  }
+  .odometer-wrapper {
+    top: 16%;
+    left: 68%;
+  }
+}
+@media ((min-width: 550px) and (max-width:600px)) {
+  .odometer {
+    font-size: 1.7rem;
+  }
+
+  .odometer-digit {
+    width: 1.7rem;
+  }
+  .odometer-wrapper {
+    top: 15.5%;
+    left: 70%;
+  }
+}
+@media ((min-width: 500px) and (max-width:550px)) {
+  .odometer {
+    font-size: 1.5rem;
+  }
+
+  .odometer-digit {
+    width: 1.5rem;
+  }
+  .odometer-wrapper {
+    top: 15.5%;
+    left: 70%;
+  }
+}
+
+@media ((min-width: 450px) and (max-width:500px)) {
+  .odometer {
+    font-size: 1.2rem;
+  }
+
+  .odometer-digit {
+    width: 1.2rem;
+  }
+  .odometer-wrapper {
+    top: 15%;
+    left: 71.5%;
+  }
+}
+@media ((min-width: 400px) and (max-width:450px)) {
+  .odometer {
+    font-size: 1.2rem;
+  }
+
+  .odometer-digit {
+    width: 1.2rem;
+  }
+  .odometer-wrapper {
+    top: 15%;
+    left: 70.2%;
+  }
+}
+@media ((min-width: 320px) and (max-width:400px)) {
+  .odometer {
+    font-size: 1rem;
+  }
+
+  .odometer-digit {
+    width: 1rem;
+  }
+  .odometer-wrapper {
+    top: 15%;
+    left: 70%;
+  }
+}
+@media (max-width: 320px) {
+  .odometer {
+    font-size: 0.8rem;
+  }
+
+  .odometer-digit {
+    width: 0.8rem;
+  }
+  .odometer-wrapper {
+    top: 15%;
+    left: 71%;
+  }
+}
+
+/* .odometer-digit {
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    color: black;
+    width: 50px;
+    padding-top: 120%;
+  }
+  
+  .odometer-digit .odometer-digit-inner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  } */
+
+/* .odometer-digit:nth-child(1) .odometer-digit-inner {
+  background-image: url("../assets/Asset 79.png");
+  text-align: center; 
+  line-height: 95px; 
+}
+
+.odometer-digit:nth-child(2) .odometer-digit-inner {
+  background-image: url("../assets/Asset 79.png");
+  text-align: center; 
+  line-height: 95px; 
+}
+.odometer-digit:nth-child(3) .odometer-digit-inner {
+  background-image: url("../assets/Asset 79.png");
+  text-align: center; 
+  line-height: 95px; 
+}
+.odometer-digit:nth-child(4) .odometer-digit-inner {
+  background-image: url("../assets/Asset 79.png");
+  text-align: center; 
+  line-height: 95px; 
+}
+.odometer-digit:nth-child(5) .odometer-digit-inner {
+  background-image: url("../assets/Asset 79.png");
+  text-align: center; 
+  line-height: 95px; 
+}
+.odometer-digit:nth-child(6) .odometer-digit-inner {
+  background-image: url("../assets/Asset 79.png");
+  text-align: center; 
+  line-height: 95px; 
+}
+.odometer-digit:nth-child(7) .odometer-digit-inner {
+  background-image: url("../assets/Asset 79.png");
+  text-align: center; 
+  line-height: 95px; 
+}
+.odometer-digit:nth-child(8) .odometer-digit-inner {
+  background-image: url("../assets/Asset 79.png");
+  text-align: center; 
+  line-height: 95px; 
+}
+
+.odometer-digit:nth-child(9) .odometer-digit-inner {
+  background-image: url("../assets/Asset 79.png");
+  text-align: center; 
+  line-height: 95px; 
+} */
