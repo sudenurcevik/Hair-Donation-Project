@@ -1,7 +1,7 @@
 import Request from "../helpers/RequestHelper";
 
 export default async function openPdf() {
-  const res = await Request("post", "/download-pdf/");
+  const res = await Request("get", "/download-pdf/");
   console.log(res);
 
   if (res && res.data && res.data.pdf_base64) {

@@ -20,7 +20,7 @@ const Container = styled("div")({
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-  padding: "1.5rem",
+  // padding: "1.5rem",
   paddingBottom: ".5rem",
   marginTop: "3rem",
 });
@@ -62,6 +62,9 @@ const Title = styled("h2")({
   fontWeight: "bold",
   color: "#6F7070",
   marginBottom: "1rem",
+  "@media (max-width: 768px)": {
+    fontSize: "2.5rem",
+  },
 });
 
 const ParagraphContainer = styled("div")({
@@ -82,7 +85,7 @@ const Paragraph = styled("p")({
   fontSize: "1rem",
   color: "#666",
   textAlign: "left",
-  width: "25%", // Adjust the size of the circular images as needed
+  width: "27%", // Adjust the size of the circular images as needed
   height: "auto",
   margin: "0", // Adjust the spacing between the images and the string
   "@media (max-width: 992px)": {
@@ -90,6 +93,16 @@ const Paragraph = styled("p")({
     height: "auto",
     margin: 0,
     padding: ".5rem",
+  },
+});
+const ParagraphTitle = styled("h1")({
+  fontFamily: "MontBold, sans-serif", // Use the imported font family
+  fontSize: "1.3rem",
+  textAlign: "left",
+  color: "#FF4B00",
+  margin: "0 auto 1rem", // Adjust the spacing between the images and the string
+  "@media (max-width: 992px)": {
+    fontSize: "1rem",
   },
 });
 
@@ -123,7 +136,26 @@ export default function HowItWorks() {
 
   return (
     <CustomPaper elevation={0} className="mont-regular">
-      <Title className="manuka-bold">How Does It Work?</Title>
+      <Title className="manuka-bold">Donate Your Hair in 5 Simple Steps</Title>
+      <Paragraph
+        style={{
+          fontSize: "1.2rem",
+          color: "#666",
+          textAlign: "left",
+          width: "100%", // Adjust the size of the circular images as needed
+          height: "auto",
+          margin: "0", // Adjust the spacing between the images and the string
+          "@media (max-width: 992px)": {
+            fontSize: "1rem",
+          },
+        }}
+      >
+        To ensure a successful donation, your hair should be at least 10 inches
+        long, dry and clean. While cutting, it's recommended to divide your hair
+        into 4-6 sections. After the cut, securely fasten each section with
+        rubber bands, leaving a space of 2-3 inches between each fastened
+        portion.
+      </Paragraph>
       {isSmallScreen ? (
         <>
           <Container>
@@ -158,16 +190,19 @@ export default function HowItWorks() {
           </Container>
           <ParagraphContainer className="mont-regular">
             <Paragraph>
-              To ensure a successful donation, your hair should be at least 10
-              inches long, dry and clean. While cutting, divide it into 4-6
-              sections. After the cut, securely fasten each section with rubber
-              bands, leaving 2-3 inches of space between them.
+              <ParagraphTitle>Prepare & Cut</ParagraphTitle>
+              <p>
+                Ensure hair is clean and dry. Securely tie it into a ponytail or
+                braid before cutting above the band.
+              </p>
             </Paragraph>
+
             <Paragraph>
-              Simply place your cut hair into a sealed plastic bag to keep it
-              safe during transit. Next, insert the plastic bag into an envelope
-              for mailing. Remember to include the donation form in the mail as
-              well.
+              <ParagraphTitle>Package Securely</ParagraphTitle>
+              <p>
+                Place your freshly-cut hair into a sealed plastic bag to protect
+                it.
+              </p>
             </Paragraph>
           </ParagraphContainer>
           <Container>
@@ -200,13 +235,18 @@ export default function HowItWorks() {
           </Container>
           <ParagraphContainer className="mont-regular">
             <Paragraph>
-              You should send the hair to the address mentioned in the donation
-              form. Make sure to securely seal the envelope to protect the hair
-              during shipping.
+              <ParagraphTitle>Envelope Ready</ParagraphTitle>
+              <p>
+                Insert the bagged hair into a sturdy envelope, ensuring no parts
+                stick out.
+              </p>
             </Paragraph>
             <Paragraph>
-              Donated hair is delivered to support and empower cancer patients,
-              reminding them they are not alone in their journey.
+              <ParagraphTitle>Send with Love</ParagraphTitle>
+              <p>
+                Mail your precious donation to the designated donation center.
+                Your selfless act brings warmth and smiles!
+              </p>
             </Paragraph>
           </ParagraphContainer>
           <Container style={{ maxWidth: "50%" }}>
@@ -228,10 +268,15 @@ export default function HowItWorks() {
             className="mont-regular"
             style={{ maxWidth: "100%" }}
           >
-            <Paragraph>
-              The donated hair sent to the collection center will be converted
-              into kilometers/ miles and take your company one step further in
-              this competition.
+            <Paragraph style={{ width: "62%" }}>
+              <ParagraphTitle style={{ width: "100%" }}>
+                Compete & Contribute
+              </ParagraphTitle>
+              <p>
+                Every hair donation sent will be converted into
+                kilometers/miles, advancing your company in the competition.
+                Your generosity propels us forward!
+              </p>
             </Paragraph>
           </ParagraphContainer>
         </>
@@ -258,23 +303,27 @@ export default function HowItWorks() {
               <OrangeString />
             </StringContainer>
           </Container>
-          <ParagraphContainer className="mont-regular">
+          <ParagraphContainer>
             <Paragraph>
-              To ensure a successful donation, your hair should be at least 10
-              inches long, dry and clean. While cutting, divide it into 4-6
-              sections. After the cut, securely fasten each section with rubber
-              bands, leaving 2-3 inches of space between them.
+              <ParagraphTitle>Prepare & Cut</ParagraphTitle>
+              <p>
+                Ensure hair is clean and dry. Securely tie it into a ponytail or
+                braid before cutting above the band.
+              </p>
             </Paragraph>
-            <Paragraph>
-              Simply place your cut hair into a sealed plastic bag to keep it
-              safe during transit. Next, insert the plastic bag into an envelope
-              for mailing. Remember to include the donation form in the mail as
-              well.
+            <Paragraph style={{ marginLeft: "10%" }}>
+              <ParagraphTitle>Package Securely</ParagraphTitle>
+              <p>
+                Place your freshly-cut hair into a sealed plastic bag to protect
+                it.
+              </p>
             </Paragraph>
-            <Paragraph>
-              You should send the hair to the address mentioned in the donation
-              form. Make sure to securely seal the envelope to protect the hair
-              during shipping.
+            <Paragraph style={{ paddingLeft: "12%" }}>
+              <ParagraphTitle>Envelope Ready</ParagraphTitle>
+              <p>
+                Insert the bagged hair into a sturdy envelope, ensuring no parts
+                stick out.
+              </p>
             </Paragraph>
           </ParagraphContainer>
           <Container style={{ maxWidth: "59%" }}>
@@ -294,13 +343,19 @@ export default function HowItWorks() {
             style={{ maxWidth: "59%" }}
           >
             <Paragraph>
-              Donated hair is delivered to support and empower cancer patients,
-              reminding them they are not alone in their journey.
+              <ParagraphTitle>Send with Love</ParagraphTitle>
+              <p>
+                Mail your precious donation to the designated donation center.
+                Your selfless act brings warmth and smiles!
+              </p>
             </Paragraph>
-            <Paragraph>
-              The donated hair sent to the collection center will be converted
-              into kilometers/ miles and take your company one step further in
-              this competition.
+            <Paragraph style={{ marginLeft: "10%" }}>
+              <ParagraphTitle>Compete & Contribute</ParagraphTitle>
+              <p>
+                Every hair donation sent will be converted into
+                kilometers/miles, advancing your company in the competition.
+                Your generosity propels us forward!
+              </p>
             </Paragraph>
           </ParagraphContainer>
         </>

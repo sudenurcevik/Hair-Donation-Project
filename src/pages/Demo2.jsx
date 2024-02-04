@@ -98,7 +98,7 @@ const MileText = styled("div")({
   padding: ".3rem .8rem",
   backgroundColor: "#8000BA",
   "@media (max-width: 500px)": {
-    fontSize: ".8rem",
+    fontSize: ".6rem",
     padding: ".2rem .6rem",
     top: "41%",
   },
@@ -479,18 +479,18 @@ const Demo2 = ({ setLinkName }) => {
           <ScissorsImage
             src={scissors}
             alt="Scissors"
-            style={{ left: animationDone ? "50%" : "20%" }}
+            style={{ left: animationDone ? "45%" : "20%" }}
             className="mont-regular"
           />
           <NameText
             className="mont-regular"
-            style={{ left: animationDone ? "50%" : "20%" }}
+            style={{ left: animationDone ? "45%" : "20%" }}
           >
             {topThreeCompanies[2]?.company_name}
           </NameText>
           <MileText
             className="mont-regular"
-            style={{ left: animationDone ? "50%" : "20%" }}
+            style={{ left: animationDone ? "45%" : "20%" }}
           >
             {topThreeCompanies[2]?.company_donation_mil} mil.
           </MileText>
@@ -499,18 +499,18 @@ const Demo2 = ({ setLinkName }) => {
           <ScissorsImage
             src={scissors}
             alt="Scissors"
-            style={{ left: animationDone ? "70%" : "20%" }}
+            style={{ left: animationDone ? "65%" : "20%" }}
             className="mont-regular"
           />
           <NameText
             className="mont-regular"
-            style={{ left: animationDone ? "70%" : "20%" }}
+            style={{ left: animationDone ? "65%" : "20%" }}
           >
             {topThreeCompanies[1]?.company_name}
           </NameText>
           <MileText
             className="mont-regular"
-            style={{ left: animationDone ? "70%" : "20%" }}
+            style={{ left: animationDone ? "65%" : "20%" }}
           >
             {topThreeCompanies[1]?.company_donation_mil} mil.
           </MileText>
@@ -519,18 +519,18 @@ const Demo2 = ({ setLinkName }) => {
           <ScissorsImage
             src={scissors}
             alt="Scissors"
-            style={{ left: animationDone ? "90%" : "%" }}
+            style={{ left: animationDone ? "85%" : "%" }}
             className="mont-regular"
           />
           <NameText
             className="mont-regular"
-            style={{ left: animationDone ? "90%" : "20%" }}
+            style={{ left: animationDone ? "85%" : "20%" }}
           >
             {topThreeCompanies[0]?.company_name}
           </NameText>
           <MileText
             className="mont-regular"
-            style={{ left: animationDone ? "90%" : "20%" }}
+            style={{ left: animationDone ? "85%" : "20%" }}
           >
             {topThreeCompanies[0]?.company_donation_mil} mil.
           </MileText>

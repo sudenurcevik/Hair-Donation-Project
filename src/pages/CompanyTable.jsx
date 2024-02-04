@@ -74,7 +74,7 @@ const Title = styled(TableCell)({
   "@media (max-width: 768px)": {
     minWidth: "2rem",
     padding: ".3rem",
-    fontSize: "1.4rem",
+    fontSize: "1.3rem",
     borderRight: "2px solid white",
     borderLeft: "2px solid white",
   },
@@ -188,7 +188,7 @@ const CompanyTable = () => {
   }, []);
 
   const styles = {
-    maxHeight: isSmallScreen ? "1.5rem" : "3.5rem",
+    maxHeight: isSmallScreen ? "1.2rem" : "3.5rem",
     // width: isSmallScreen ? "4rem" : "6rem",
   };
 
@@ -236,7 +236,7 @@ const CompanyTable = () => {
                     textAlign: "center",
                   }}
                 >
-                  Miles/Kilometers
+                  Mil/Km
                 </Title>
               </TableRow>
             </TableHead>
